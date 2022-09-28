@@ -1,0 +1,96 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+#carousel{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+#sliderTotale{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.slider1{
+    background: url(./img/automobile-g5d0c0ed1e_1920.jpg);
+    opacity: 0;
+    animation-name: visibiliy;
+    animation-delay: 20s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.slider2{
+    background: url(./img/dollars-g808dde6e5_1920.jpg);
+    opacity: 0;
+    animation-name: visibiliy;
+    animation-delay: 15s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.slider3{
+    background: url(./img/finance-g4fad26954_1920.jpg);
+    opacity: 0;
+    animation-name: visibiliy;
+    animation-delay: 10s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.slider4{
+    background: url(./img/piggy-bank-ga3ced3d3e_1920.jpg);
+    opacity: 0;
+    animation-name: visibiliy;
+    animation-delay: 20s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.slider5{
+    background: url(./img/sunset-g4e1de516d_1920.jpg);
+    animation-name: visibiliy;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    
+    
+}
+
+#button{
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.pause{
+    position: absolute;
+    padding: 10px;
+}
+#stop{
+    visibility: hidden;
+}
+
+@keyframes visibility {
+      0% {opacity: 1;right: 0;}
+      25% {opacity: 0.75;right: 25%;}
+      50% {opacity: 0.5; right: 49%;}
+      75% {opacity: 0.25; right: 75%;}
+    100% {opacity: 0;right: 100%;}
+}
